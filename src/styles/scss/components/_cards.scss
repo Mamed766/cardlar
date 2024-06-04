@@ -1,0 +1,57 @@
+.cards {
+  padding: 2% 10%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+
+  & > h1 {
+    font-size: 3rem;
+  }
+
+  & > h1,
+  & > p {
+    text-align: center;
+    line-height: 1.8;
+  }
+  p {
+    color: #71797e;
+  }
+  .card {
+    display: flex;
+    gap: 2rem;
+    &__cards--card {
+      padding: 2% 2%;
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8rem;
+      background-color: #fff;
+
+      &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: white;
+        }
+        height: 2rem;
+        width: 2rem;
+        border-radius: 2rem;
+        background-color: black;
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      &__btn {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
