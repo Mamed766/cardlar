@@ -5,13 +5,23 @@ function updateColor() {
     const logo = card.querySelector(".card__cards--card__logo");
     const btn = card.querySelector(".card__cards--card__btn--btn");
 
-    if (logo.classList.contains("request")) {
-      setColor(logo, btn, "#4682B4");
-    } else if (logo.classList.contains("pending")) {
-      setColor(logo, btn, "#FF5733");
-    } else if (logo.classList.contains("done")) {
-      setColor(logo, btn, "#5F9EA0");
-    }
+    btn.style.color = "black";
+    logo.style.backgroundColor = "black";
+
+    btn.addEventListener("mouseover", () => {
+      if (logo.classList.contains("request")) {
+        setColor(logo, btn, "#4682B4");
+      } else if (logo.classList.contains("pending")) {
+        setColor(logo, btn, "#FF5733");
+      } else if (logo.classList.contains("done")) {
+        setColor(logo, btn, "#5F9EA0");
+      }
+    });
+
+    btn.addEventListener("mouseout", () => {
+      setColor(logo, btn, "white");
+      logo.style.backgroundColor = "black";
+    });
   });
 }
 
