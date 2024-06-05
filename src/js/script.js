@@ -16,11 +16,13 @@ function updateColor() {
       } else if (logo.classList.contains("done")) {
         setColor(logo, btn, "#5F9EA0");
       }
+      btn.style.color = "white";
     });
 
     btn.addEventListener("mouseout", () => {
       setColor(logo, btn, "white");
       logo.style.backgroundColor = "black";
+      btn.style.color = "black";
     });
   });
 }
