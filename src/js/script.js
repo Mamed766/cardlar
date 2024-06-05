@@ -15,6 +15,8 @@ function updateColor() {
         setColor(logo, btn, "#FF5733");
       } else if (logo.classList.contains("done")) {
         setColor(logo, btn, "#5F9EA0");
+      } else if (logo.classList.contains("rich")) {
+        setColor(logo, btn, "#E5B80B");
       }
       btn.style.color = "white";
     });
