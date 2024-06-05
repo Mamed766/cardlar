@@ -19,11 +19,11 @@
     color: #71797e;
   }
   .card {
-    display: flex;
+    // display: flex;
     gap: 2rem;
     &__cards--card {
-      padding: 2% 2%;
-      width: 30rem;
+      padding: 4% 4%;
+      // width: 30rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
